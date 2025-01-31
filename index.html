@@ -7,7 +7,9 @@
     <title>Natures Platter</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/81a20471cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -20,8 +22,52 @@
 </head>
 
 <body class="font-sora">
-    <header>
-        
+    <header class="mb-28">
+        <!-- navber -->
+        <div class="navbar bg-base-100 lg:pt-7 lg:px-24 border-b border-[#638B3F] md:border-hidden">
+            <div class="navbar-start">
+                <div>
+                    <img src="images/logo-header.png" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Products</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar-end space-x-3 invisible lg:visible">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping "></i>
+                <a class="btn bg-white border border-[#638B3F]">Login</a>
+                <a class="btn bg-[#179800] text-white">Register</a>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- hero section -->
+        <div class="place-items-center bg-gradient-to-t from-orange-100">
+            <div class="hero-content text-center">
+                <div class="">
+                    <h1 class="text-5xl font-semibold ">Freshness <span class="text-[#179800]">You Can <br> Count On</span>, Prices You’ll Love!</h1>
+                    <p class="py-6 lg:w-8/12 place-self-center">
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="images/hero-vegetables.png" alt="">
+            </div>
+        </div>
     </header>
     <main>
 
